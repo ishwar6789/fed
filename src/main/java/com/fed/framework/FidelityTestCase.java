@@ -4,6 +4,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 public class FidelityTestCase extends BaseTest {
 
@@ -29,6 +30,8 @@ public class FidelityTestCase extends BaseTest {
 	private void startSelenium() {
 	
 		SeleniumWrapper wrap = new SeleniumWrapper(GlobalVariables.browser);
+		SeleniumExtensions.driver= wrap.driver;
+		
 		
 	}
 

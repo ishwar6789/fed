@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Keyword class]">
+  <test name="Main">
+    <groups>
+      <run>
+        <include name="Rollover"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.nd.tests.Test_30"/>
+      <class name="com.nd.tests.Test_31"/>
+    </classes>
+  </test> <!-- Main -->
+</suite> <!-- Failed suite [Keyword class] -->

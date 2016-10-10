@@ -7,10 +7,11 @@ import java.util.Properties;
 
 public class GlobalVariables {
 	public static String browser;
-	public static String resourcePath;
+	public static String configPath;
 	public static String screenshotPath;
+	public static String driverPath;
 
-	GlobalVariables() {
+	public static void setGlobalVariables() {
 		// set all the global paths
 		setConfigPath();
 		// read configuration file
@@ -18,11 +19,12 @@ public class GlobalVariables {
 	}
 
 	private static void setConfigPath() {
-		resourcePath = System.getProperty("user.dir") + "\\src\\main\\resources\\Configuration.properties";
+		configPath = System.getProperty("user.dir") + "\\src\\main\\resources\\Configuration.properties";
+		driverPath = System.getProperty("user.dir") + "\\src\\main\\resources\\DataTable\\Drivers";
 	}
 
-	private void configReader() {
-		browser = getPropValues(resourcePath, "browser");
+	private static void configReader() {
+		browser = getPropValues(configPath, "browser");
 	}
 
 	public static String getPropValues(String propFile, String propKey) {

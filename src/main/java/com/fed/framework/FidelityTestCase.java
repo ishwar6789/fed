@@ -27,7 +27,8 @@ public class FidelityTestCase extends BaseTest {
 	}
 
 	private void startSelenium() {
-		// TODO setup selenium driver
+	
+		SeleniumWrapper wrap = new SeleniumWrapper(GlobalVariables.browser);
 		
 	}
 

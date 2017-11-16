@@ -1,6 +1,7 @@
 package com.fed.framework;
 //wrongthig
 //testing
+//test
 public class BaseTest {	
 	
 	public void setUpBase(){
